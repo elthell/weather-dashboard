@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <title>Weather Dashboard</title>
+  </head>
+  <body class="bg-light p-2">
+    <header class="container-fluid bg-primary bg-gradient p-3">
+      <h1 class="text-center text-light">Weather Dashboard</h1>
+    </header>
+    <main class="border container-fluid row mt-3 p-2">
+      <section id="city-search" class="border col-3 p-2">
+        <div id="search-field" class="border d-grid gap-2 p-3">
+          <h2>Search for a city:</h2>
+          <input
+            type="text"
+            id="search-btn"
+            class="form-control"
+            placeholder="City Name"
+            aria-label="city-name"
+          />
+          <button type="button" class="btn btn-primary mt-2">Search</button>
+        </div>
+        <div id="search-results" class="border p-3"></div>
+      </section>
+      <section id="city-display" class="border col-9 p-2">
+        <div id="city-weather" class="border p-3">
+          <h2 id="city-name"><span id="weather-icon"></span></h2>
+          <p>Temp:<span id="city-temp"></span></p>
+          <p>Humidity:<span id="city-humid"></span></p>
+          <p>Wind:<span id="city-wind"></span></p>
+        </div>
+        <div id="forecast" class="border p-3">
+            <h3>5-Day Forecast</h3>
+        </div>
+      </section>
+    </main>
+    <script src="./assets/js/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
