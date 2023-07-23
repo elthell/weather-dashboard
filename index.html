@@ -22,24 +22,25 @@
           <h2>Search for a city:</h2>
           <input
             type="text"
-            id="search-btn"
+            id="city-input"
             class="form-control"
-            placeholder="City Name"
-            aria-label="city-name"
+            value=""
+            placeholder="Duluth, MN"
           />
-          <button type="button" class="btn btn-primary mt-2">Search</button>
+          <button type="button" id="search-btn" class="btn btn-primary mt-2">Search</button>
         </div>
         <div id="search-results" class="border p-3"></div>
       </section>
       <section id="city-display" class="border col-9 p-2">
         <div id="city-weather" class="border p-3">
           <h2 id="city-name"><span id="weather-icon"></span></h2>
-          <p>Temp:<span id="city-temp"></span></p>
-          <p>Humidity:<span id="city-humid"></span></p>
-          <p>Wind:<span id="city-wind"></span></p>
+          <p id="city-temp"></p>
+          <p id="city-humid"></p>
+          <p id="city-wind"></p>
         </div>
         <div id="forecast" class="border p-3">
             <h3>5-Day Forecast</h3>
+            <div id="forecast-days"></div>
         </div>
       </section>
     </main>
