@@ -13,7 +13,7 @@
     <title>Weather Dashboard</title>
   </head>
   <body class="bg-light p-2">
-    <header class="container-fluid bg-primary bg-gradient p-3">
+    <header class="container-fluid bg-primary bg-gradient rounded p-3">
       <h1 class="text-center text-light">Weather Dashboard</h1>
     </header>
     <main class="border container-fluid row mt-3 p-2">
@@ -25,22 +25,16 @@
             id="city-input"
             class="form-control"
             value=""
-            placeholder="Duluth, MN"
+            placeholder="City Name"
           />
           <button type="button" id="search-btn" class="btn btn-primary mt-2">Search</button>
         </div>
-        <div id="search-results" class="border p-3"></div>
+        <div id="search-results" class="border p-3 d-grid gap-2"></div>
       </section>
       <section id="city-display" class="border col-9 p-2">
         <div id="city-weather" class="border p-3">
-          <h2 id="city-name"><span id="weather-icon"></span></h2>
-          <p id="city-temp"></p>
-          <p id="city-humid"></p>
-          <p id="city-wind"></p>
         </div>
-        <div id="forecast" class="border p-3">
-            <h3>5-Day Forecast</h3>
-            <div id="forecast-days"></div>
+        <div id="forecast" class="border mt-3 p-3">
         </div>
       </section>
     </main>
