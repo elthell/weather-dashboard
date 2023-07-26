@@ -50,9 +50,10 @@ let savedSearches = function () {
 // function to get city coords
 let getCityCoords = function (input) {
   let apiUrl =
-    "http://api.openweathermap.org/geo/1.0/direct?q=" +
+    "https://api.openweathermap.org/geo/1.0/direct?q=" +
     input +
     "&limit=1&appid=10f2a4299cb936661259de80cf95e163";
+    console.log(apiUrl)
 
   fetch(apiUrl)
     .then(function (response) {
